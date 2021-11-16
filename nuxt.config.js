@@ -79,7 +79,7 @@ module.exports = {
       const totalArticles = allArticles.length;
 
       // use Math.ceil to round up to the nearest whole number
-      const lastPage = Math.ceil(totalArticles / perPage);
+      const lastPage = Math.ceil(totalArticles / 5);
 
       var postPaths = [];
       allArticles.map(function(a) {
