@@ -83,7 +83,7 @@ module.exports = {
 
       var postPaths = [];
       allArticles.map(function(a) {
-        postPaths.push('/desk/'+a.id);
+        postPaths.push('/post/'+a.id);
       });
       for (let i = 1; i < lastPage+1; i++) {
         postPaths.push('/page/'+i);
