@@ -1,8 +1,8 @@
 {
-  "name": "nuxt-maupassant",
+  "name": "moonhea's weibo",
   "version": "1.0.0",
-  "description": "A personal blog site of Jenny HOU, powered by Nuxt.js, using theme Maupassant",
-  "author": "HOU Zhenni <hzn2017@outlook.com>",
+  "description": "A stand-alone weibo for moonhea",
+  "author": "Moonhea",
   "private": true,
   "scripts": {
     "dev": "nuxt",

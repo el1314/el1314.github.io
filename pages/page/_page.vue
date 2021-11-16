@@ -37,7 +37,7 @@ export default {
     var deskPosts = await getDeskpostByPage(context.$content, context.params, {perPage: 5});
     var pageNum = context.params.page;
     return {
-      pageNum
+      pageNum,
       posts: deskPosts.paginatedArticles,
       page_total: deskPosts.allArticles.length
     }
