@@ -1,8 +1,8 @@
 {
-  "name": "moonhea weibo",
+  "name": "el1314.github.io",
   "version": "1.0.0",
   "description": "A stand-alone weibo for moonhea",
-  "author": "Moonhea",
+  "author": "Moonhea <eternallove1314@outlook.com>",
   "private": true,
   "scripts": {
     "dev": "nuxt",
