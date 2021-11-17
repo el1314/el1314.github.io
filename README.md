@@ -1,7 +1,6 @@
-# Jenny's Blog
+# 月下摸鱼的微博
 
-本网站以 Nuxt.js 建成，主题仿照 GitHub ID 为 pagecho
- 的作者设计的 `maupassant` ，但主要参考了 GitHub ID 为 tufu9441 的作者为 Hexo 而改变的版本。
+由于本人微博账号被炸，所以用 Nuxt.js 自己做了个人版自建微博。
 
 # This file
 
