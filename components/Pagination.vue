@@ -69,7 +69,7 @@ export default {
   },
   computed: {
     totalPages() {
-      return Math.floor(this.total / this.perPage);
+      return Math.ceil(this.total / this.perPage);
     },
     currentPage() {
       return parseInt(this.$route.params.page) || 1;
@@ -84,7 +84,7 @@ export default {
     },
   },
   // mounted() {
-  // 	console.log(this.totalPages)
+  // 	console.log("totalPages="+this.totalPages)
   // }
 };
 </script>

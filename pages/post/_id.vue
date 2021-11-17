@@ -6,18 +6,19 @@
           <DeskBanner deskOwner="Moonhea"></DeskBanner>
         </nuxt-link>
         <DeskPost 
-        :url="'/desk/'+post.id"
+        :url="'/post/'+post.id"
         author="月下摸的鱼" 
         :id="post.id" :time="post.time" :content="post.content"
         :link="post.link"
         :picture="post.picture"
         :isDetail="true"
+        :share_content="share_txt"
         ></DeskPost>
         <div id="disqus_thread">
-          <div class="loadCommentBtn read-more" @click="loadDisqus">
+          <!-- <div class="loadCommentBtn read-more" @click="loadDisqus">
             <i class="fa fa-comment" aria-hidden="true"></i>
             加载评论
-          </div>
+          </div> -->
         </div>
       </main>
     </div>
@@ -40,7 +41,15 @@ export default {
   },
   async asyncData(context) {
     const post = await getDeskpostById(context.$content, context.params);
+    var share_txt = "";
+    if (post.post.content) {
+      share_txt = post.post.content.join("");
+      share_txt = share_txt.length>97
+      ?share_txt.substring(0,97)+"..."
+      :share_txt;
+    }
     return {
+      share_txt,
       post: post.post
     };
   },
@@ -49,6 +58,7 @@ export default {
     that.$nextTick(() => {
       window.PAGE_URL = "https://moonhea.com" + window.location.pathname;
       window.PAGE_IDENTIFIER = window.location.pathname;
+      that.loadDisqus();
       //add zoompic for imgs
       zoompic([[".blog-main img",true]]);
     });
@@ -64,7 +74,10 @@ export default {
       title: "发表于"+this.post.time+"的微博",
       meta: [
         { hid: 'date', name: 'date', content: this.post.time },
-        { hid: 'description', name: 'description', content: "发表于"+this.post.time+"的微博" },
+        { hid: 'description', 
+          name: 'description', 
+          content: "发表于"+this.post.time+"的微博: "+this.share_txt
+        },
       ]
     }
   }

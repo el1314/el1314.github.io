@@ -1,4 +1,4 @@
-export default async ($content, params, {perPage}) => {
+export default async ($content, params, {perPage},error) => {
   const currentPage = parseInt(params.page);
 
   var files = await $content('desk')
@@ -16,7 +16,8 @@ export default async ($content, params, {perPage}) => {
   const lastPage = Math.ceil(totalArticles / perPage);
 
   // use the % (modulus) operator to get a whole remainder
-  const lastPageCount = totalArticles % perPage;
+  const lastPageCount = totalArticles % perPage == 0
+  ?perPage:totalArticles % perPage;
 
   const skipNumber = () => {
     if (currentPage === 1) {

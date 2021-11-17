@@ -34,7 +34,7 @@ export default {
   },
   async asyncData(context) {
     var that = this;
-    var deskPosts = await getDeskpostByPage(context.$content, context.params, {perPage: 5});
+    var deskPosts = await getDeskpostByPage(context.$content, context.params, {perPage: 5}, context.error);
     var pageNum = context.params.page;
     return {
       pageNum,

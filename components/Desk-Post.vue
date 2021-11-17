@@ -1,13 +1,13 @@
 <template>
 	<div class="desk-unit">
     <div class="share">
-      <div class="media">
+      <div class="media blue">
         <a target="_blank" :href="'https://www.facebook.com/sharer/sharer.php?u=https://moonhea.com'+url"><i class="fa fa-facebook-f"></i></a>
       </div>
-      <div class="media">
+      <div class="media blue">
         <a target="_blank" :href="'http://twitter.com/share?url=https://moonhea.com'+url"><i class="fa fa-twitter"></i></a>
       </div>
-      <div class="media">
+      <div class="media red">
         <a target="_blank" :href="'https://service.weibo.com/share/share.php?url=https://moonhea.com'+url"><i class="fa fa-weibo"></i></a>
       </div>
     </div>
@@ -52,7 +52,6 @@ export default {
       :"col-3"
     }
     return {
-      isRed: false,
       imgClass
     }
   },
@@ -87,11 +86,6 @@ export default {
       type: Boolean,
       default: false
     }
-  },
-  methods: {
-    redHeart() {
-      this.isRed = true;
-    }
   }
 }
 </script>
@@ -109,8 +103,7 @@ export default {
 }
 .desk-unit .share .media {
   margin-right: 10px;
-  text-align: center;
-  background: rgba(192,192,192,0.4);
+  text-align: center;  background: rgba(192,192,192,0.4);
   cursor: pointer;
 }
 .desk-unit .share .media:hover {
@@ -123,9 +116,6 @@ export default {
   height: 100%;
   color: inherit;
   display: block;
-}
-.desk-unit .media.heart {
-  padding: 10px;
 }
 .desk-unit-main {
   width: 100%;
@@ -145,11 +135,9 @@ export default {
 .main-color {
   color: #182b54;
 }
-.txt-red {
-  color: red;
-}
 /* 九宫格图片 */
 .desk-unit .picture {
+  margin-bottom: 8px;
   display: flex;
   flex-wrap: wrap;
 }
