@@ -79,14 +79,14 @@ module.exports = {
       const totalArticles = allArticles.length;
 
       // use Math.ceil to round up to the nearest whole number
-      const lastPage = Math.ceil(totalArticles / 5);
+      var lastPage = Math.ceil(totalArticles / 5);
 
       var postPaths = [];
       allArticles.map(function(a) {
         postPaths.push('/post/'+a.id);
       });
-      for (let i = 1; i < lastPage+2; i++) {
-        postPaths.push('/page/'+i);
+      for (let j = 1; j < lastPage+1; j++) {
+        postPaths.push('/page/'+j);
       }
       return postPaths;
     },
