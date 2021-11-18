@@ -7,7 +7,7 @@
         </nuxt-link>
         <DeskPost 
         :url="'/post/'+post.id"
-        author="月下摸的鱼" 
+        author="月下不服输" 
         :id="post.id" :time="post.time" :content="post.content"
         :link="post.link"
         :picture="post.picture"
