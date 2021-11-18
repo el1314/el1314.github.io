@@ -1,8 +1,8 @@
 <template>
   <div class="container-main">
+    <ForkOnGithub></ForkOnGithub>
     <nuxt />
     <Footer></Footer>
-    <ForkOnGithub></ForkOnGithub>
   </div>
 </template>
 
