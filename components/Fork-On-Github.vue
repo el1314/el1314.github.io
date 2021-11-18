@@ -37,7 +37,14 @@
 }
 @media screen and (min-width:800px){
   #forkongithub{
-    position:absolute;display:block;top:0;right:0;width:200px;overflow:hidden;height:200px;z-index:9999;
+    position:absolute;
+    display:block;
+    top:0;
+    right:0;
+    width:267px;
+    overflow:hidden;
+    height:200px;
+    z-index:9999;
   }
   #forkongithub a{
     width:200px;
