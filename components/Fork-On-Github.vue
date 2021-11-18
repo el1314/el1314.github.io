@@ -41,15 +41,15 @@
     display:block;
     top:0;
     right:0;
-    width:267px;
+    width:200px;
     overflow:hidden;
     height:200px;
     z-index:9999;
   }
   #forkongithub a{
-    width:200px;
+    width:238px;
     position:absolute;
-    top:60px;
+    top:48px;
     right:-60px;
     transform:rotate(45deg);
     box-shadow:4px 4px 10px rgba(0,0,0,0.8);
