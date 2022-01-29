@@ -14,6 +14,9 @@ module.exports = {
       { rel: 'stylesheet', href: '/css/style.css?2021-11-16' },
       { rel: 'stylesheet', href: '/font-awesome/css/font-awesome.min.css'},
     ],
+    script: [
+      { src: '/js/statcounter.js?2022-01-29'},
+    ]
   },
   //if you will deploy in <username>.github.io/<my-project>
   //then base should be set to "/<my-project>/"
