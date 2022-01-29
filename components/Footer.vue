@@ -1,6 +1,13 @@
 <template>
   <footer>
     <p>- Moonhea的自建微博 -</p>
+    <p>
+    	我的
+    	<a href="/" target="_blank" class="no-decor-link">
+    		<strong>博客</strong>
+	    	<i class="fa fa-external-link font-20"></i>
+	    </a>
+	  </p>
     <div class="go-top" @click="toTop" :class="{'go-top-hidden': isHidden}">
         <div class="arrow"></div>
         <div class="stick"></div>
