@@ -3,7 +3,7 @@
     <p>- Moonhea的自建微博 -</p>
     <p>
     	我的
-    	<a href="/blog" target="_blank" class="no-decor-link">
+    	<a href="/blog" class="no-decor-link">
     		<strong>博客</strong>
 	    	<i class="fa fa-external-link font-20"></i>
 	    </a>
