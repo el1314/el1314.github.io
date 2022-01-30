@@ -5,7 +5,7 @@
     	我的
     	<a href="/blog" class="no-decor-link">
     		<strong>博客</strong>
-	    	<i class="fa fa-external-link font-20"></i>
+	    	<i class="font-20"></i>
 	    </a>
 	  </p>
     <div class="go-top" @click="toTop" :class="{'go-top-hidden': isHidden}">
