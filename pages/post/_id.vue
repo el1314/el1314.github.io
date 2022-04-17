@@ -5,6 +5,9 @@
         <nuxt-link to="/" class="no-decor-link">
           <DeskBanner deskOwner="Moonhea"></DeskBanner>
         </nuxt-link>
+        <p>
+          不想看碎碎念？来看看我的<a href="https://moonhea.com/blog"><strong>博客<i class="fa fa-external-link"></i></strong></a>吧！
+        </p>
         <DeskPost 
         :url="'/post/'+post.id"
         author="月下不服输" 
