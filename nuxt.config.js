@@ -16,6 +16,11 @@ module.exports = {
     ],
     script: [
       { src: '/js/statcounter.js?2022-01-29'},
+      {
+        src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2790001673900763',
+        'crossorigin': 'anonymous',
+        'async':true
+      }
     ]
   },
   //if you will deploy in <username>.github.io/<my-project>
