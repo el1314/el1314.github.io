@@ -3,7 +3,7 @@
     <p>- 江东渚的<nuxt-link to="/" class="no-decor-link"><strong>碎碎念</strong></nuxt-link> -</p>
     <p>
     	我的
-    	<a href="/blog" class="no-decor-link">
+    	<a href="https://moonhea.com/blog" class="no-decor-link">
     		<strong>博客</strong>
 	    	<i class="font-20"></i>
 	    </a>
