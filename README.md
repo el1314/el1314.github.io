@@ -1,23 +1,75 @@
-# nuxt-blog
+# Nuxt Content Starter
 
-> Nuxt.js project
+Look at the [Nuxt Content documentation](https://content.nuxt.com) to learn more.
 
-## Build Setup
+## Setup
 
-``` bash
-# install dependencies
-$ npm install # Or yarn install
+Make sure to install dependencies:
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+```bash
+# npm
+npm install
 
-# build for production and launch server
-$ npm run build
-$ npm start
+# pnpm
+pnpm install
 
-# generate static project, target folder: /dist/
-$ npm run generate
+# yarn
+yarn install
+
+# bun
+bun install
 ```
 
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+## Development Server
 
+Start the development server on `http://localhost:3000`:
+
+```bash
+# npm
+npm run dev
+
+# pnpm
+pnpm dev
+
+# yarn
+yarn dev
+
+# bun
+bun run dev
+```
+
+## Production
+
+Build the application for production:
+
+```bash
+# npm
+npm run build
+
+# pnpm
+pnpm build
+
+# yarn
+yarn build
+
+# bun
+bun run build
+```
+
+Locally preview production build:
+
+```bash
+# npm
+npm run preview
+
+# pnpm
+pnpm preview
+
+# yarn
+yarn preview
+
+# bun
+bun run preview
+```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
