@@ -1,0 +1,1 @@
+import{F as e,p as t,v as n,z as r}from"./EqrXdv-9.js";import{n as i}from"#entry";import{t as a}from"./B-RoDN2K.js";var o={},s={class:`container-main`};function c(i,o){let c=a;return e(),t(`div`,s,[r(i.$slots,`default`),n(c)])}var l=i(o,[[`render`,c]]);export{l as default};

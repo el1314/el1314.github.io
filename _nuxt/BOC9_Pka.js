@@ -1,0 +1,1 @@
+import{F as e,p as t,z as n}from"./EqrXdv-9.js";import{n as r}from"#entry";var i={};function a(r,i){return e(),t(`table`,null,[n(r.$slots,`default`)])}var o=Object.assign(r(i,[[`render`,a]]),{__name:`ProseTable`});export{o as default};

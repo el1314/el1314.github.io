@@ -1,0 +1,1 @@
+import{b as e}from"./EqrXdv-9.js";import{i as t}from"./xuX7OW9i.js";var n=e({__name:`[...slug]`,setup(e){throw t({statusCode:404,message:`页面未找到`})}});export{n as default};

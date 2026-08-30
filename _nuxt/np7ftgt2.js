@@ -1,0 +1,1 @@
+import{F as e,p as t}from"./EqrXdv-9.js";import{n}from"#entry";var r={};function i(n,r){return e(),t(`hr`)}var a=Object.assign(n(r,[[`render`,i]]),{__name:`ProseHr`});export{a as default};
